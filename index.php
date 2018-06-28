@@ -8,20 +8,26 @@ if($method == 'POST'){
 	$json = json_decode($requestBody);
 
 	$text = $json->parameters->word;
-
-	$word = array("Abate",
+	
+	if($word == "new word" || $word == "random word")
+	{
+		$word = array("Abate",
 				  "Aberrant",
 				  "Abeyance",
 				  "Abscond",
 				  "Abstemious");
-	$meaning = array("Subside or moderate",
+		$meaning = array("Subside or moderate",
 					 "Abnormal or deviant",
 					 "Suspended action",
 					 "Depart secretly and hide",
 					 "Moderate in eating and drinking; temparate in diet");
-	$random = rand(0,sizeof($word)-1);
-	$speech = "test"
-
+		$random = rand(0,sizeof($word)-1);
+		$speech = "success"
+	}
+	else
+	{
+		$speech = "failure"
+	}
 	$response = new \stdClass();
 	$response->speech = $speech;
 	$response->displayText = $speech;
