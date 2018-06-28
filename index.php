@@ -20,7 +20,7 @@ if($method == 'POST'){
 					 "Depart secretly and hide",
 					 "Moderate in eating and drinking; temparate in diet");
 	$random = rand(0,sizeof($word)-1);
-	$speech = $word[$random]." : ".$meaning[$random];
+	$speech = "test"
 
 	$response = new \stdClass();
 	$response->speech = $speech;
