@@ -9,3 +9,5 @@
 
 <br><br>
 <b>Screenshots</b>
+
+<img src = "Screenshot_20180630-131610.png" width = 350px height = 600px> <br><img src = "Screenshot_20180630-131901%20(1).png" width = 350px height = 600px> 
